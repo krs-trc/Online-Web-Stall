@@ -30,15 +30,17 @@ The system consists of several main components:
 
 ## Screenshots
 ![image](https://github.com/krs-trc/Online-Web-Stall/assets/154535021/dfe7fec5-9e9d-4ea2-a831-e90e919bfebe)
-This is the home page of the website
+- This is the home page of the website
 
 ![image](https://github.com/krs-trc/Online-Web-Stall/assets/154535021/170526e6-04c4-4234-927a-5487247bc9cc)
-List of the restaurant menu
+- List of the restaurant menu
 
 ![image](https://github.com/krs-trc/Online-Web-Stall/assets/154535021/4de67bab-c221-4ced-a9a4-facf9165e715)
-About page of the restaurant
+
+- About page of the restaurant
 
 ![image](https://github.com/krs-trc/Online-Web-Stall/assets/154535021/7e58961b-9b27-4a8d-850a-e0027312ded8)
-Order page 
+
+- Order page 
 
 
