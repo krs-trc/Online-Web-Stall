@@ -1,0 +1,280 @@
+#order {
+  display: none;
+}
+
+#home,
+#menu,
+#about {
+  display: block;
+}
+
+/* Style for navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Style for buttons */
+.navbar button,
+.navbar a {
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.navbar button:hover,
+.navbar a:hover {
+  background-color: #ffffff1a;
+}
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Header styles */
+.bgimg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('photo.jpg');
+  min-height: 90%;
+}
+
+.bgimg .bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.bgimg .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.bgimg .middle .text-large {
+  font-size: 100px;
+  display: block;
+  line-height: 1.2em;
+}
+
+.bgimg .middle .text-small {
+  font-size: 60px;
+  display: none;
+}
+
+.bgimg .middle a.button-large {
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+/* Menu Container styles */
+.menu-container {
+  background-color: #6b5353;
+  padding: 64px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.menu-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.menu-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.menu-options a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.menu-options a:hover,
+.menu-options a.active {
+  background-color: #555;
+}
+
+.menu-section {
+  display: none;
+}
+
+.menu-section h1 {
+  font-size: 24px;
+}
+
+.menu-section .price {
+  color: #ffcc00;
+  margin-right: 10px;
+}
+
+
+/* About Container styles */
+.about-container {
+  padding: 64px;
+  background-color: #410606;
+  color: #fff;
+  font-size: 18px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.restaurant-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.opening-hours {
+  display: flex;
+}
+
+.day-time {
+  flex: 1;
+}
+
+/* Order Container styles */
+.order-container {
+  background-color: #d39393;
+  padding: 64px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.order-heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.order-items {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #0f0c0c;
+  margin-bottom: 20px;
+}
+
+.order-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order-item p {
+  color: #000000;
+  margin-right: 10px;
+}
+
+.order-item label {
+  margin-right: 10px;
+}
+
+.order-item input[type="number"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
+
+.order-item button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-item button:hover {
+  background-color: #555;
+}
+
+.order-item img {
+  max-width: 100px;
+  /* Adjust the maximum width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 20px;
+  /* Adjust spacing between image and details */
+  border-radius: 5px;
+  /* Add rounded corners if desired */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Add a subtle shadow */
+}
+
+
+/* Footer styles */
+.footer-container {
+  text-align: center;
+  background-color: #333;
+  padding: 48px;
+  font-size: 18px;
+  color: #ddd;
+}

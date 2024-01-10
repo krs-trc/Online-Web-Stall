@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizza Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <button onclick="showHome('home')">HOME</button>
+        <a href="#menu">MENU</a>
+        <a href="#about">ABOUT</a>
+        <button onclick="showOrder('order')">ORDER</button>
+    </div>
+
+    <!-- Your remaining HTML content goes here -->
+    <!-- Header with image -->
+
+    <!-- Header with image -->
+    <header class="bgimg" id="home">
+        <div class="middle">
+            <span class="text-large">Molin's<br>Kitchen</span>
+            <p><a href="#menu" class="button-large">Let me see the menu</a></p>
+        </div>
+
+    </header>
+
+    <!-- Menu Container -->
+
+    <div class="menu-container" id="menu">
+        <div class="menu-content">
+            <h1 class="menu-heading">THE MENU</h1>
+            <div class="menu-options">
+                <a href="#menu" onclick="openMenu('chickenRice');" id="myLink">Chicken Rice</a>
+                <a href="#menu" onclick="openMenu('tomyamBar');">Tomyam Bar</a>
+                <a href="#menu" onclick="openMenu('western');">Western</a>
+            </div>
+
+            <div id="chickenRice" class="menu-section">
+                <h1><b>Nasi Ayam Geprek</b> <span class="price">RM8.50</span></h1>
+                <p>Flavorful and fiery dish that combines crispy fried chicken with spicy chili sambal</p>
+                <h1><b>Nasi Ayam Bakar</b> <span class="price">RM8.50</span></h1>
+                <p>Harmonious combination of smoky, grilled chicken and fragnant, flavorful rice</p>
+                <h1><b>Nasi Ayam Kukus</b> <span class="price">RM7.00</span></h1>
+                <p>Cooked using the broth obtained from steaming the chicken</p>
+            </div>
+
+            <div id="tomyamBar" class="menu-section">
+                <h1><b>Tomyam with Plain Rice</b> <span class="price">RM8.00</span></h1>
+                <p>Pairing of tomyam soup with plain rice offers a balance of spicy, sour, and fragnant flavors</p>
+                <h1><b>Tomyam Kuey Teow</b> <span class="price">RM8.00</span></h1>
+                <p>Combines the vibrant flavor of Tomyam soup with flat rice noodels, known as kuey teow</p>
+            </div>
+
+            <div id="western" class="menu-section">
+                <h1><b>Spaghetti Bolognese</b> <span class="price">RM8.50</span></h1>
+                <h1><b>Spaghetti Carbonara</b> <span class="price">RM8.50</span></h1>
+                <p>Brings together the richness of sauce and the comforting texture of a perfectly cooked spaghetti</p>
+                <h1><b>Cheese Omelette with Jumbo Sausage</b> <span class="price">RM8.50</span></h1>
+                <p>Combines fluffy eggs, melted cheese, and savory jumbo sausages</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Container -->
+
+    <div class="about-container" id="about">
+        <div class="about-content">
+            <h1 class="about-heading">About</h1>
+            <p>"Welcome to Molin's Kitchen, a cozy culinary spot. This inviting eatery specializes in a delightful array
+                of chicken rice
+                variations, from the signature chicken rice to fusion-inspired spaghetti dishes infused with local
+                flavours.
+                Also don't miss out on our vibrant tomyam soup, a tantalizing blend of spicy and tangy notes."</p>
+            <p>WIth a relaxed ambiance and attentive staff to guide you through the menu, Molin Kitchen offers a
+                satisfying taste
+                of Malaysia comfort with a creative twist. </p>
+            <p>Find us on Student Pavillion, UNIMAS!
+            </p>
+            <img src="pavi.png" style="width:100%" class="restaurant-img" alt="Restaurant">
+            <h1><b>Opening Hours</b></h1>
+
+            <div class="opening-hours">
+                <div class="day-time">
+                    <p>Mon to Fri 8am - 7pm</p>
+                </div>
+                <div class="day-time">
+                    <p>Sat to Sun 9am - 10pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order container -->
+    <div class="order-container" id="order">
+        <h1 class="order-heading">Menu</h1>
+        <div class="order-items">
+            <div class="order-item" data-id="1">
+                <h3>Nasi Ayam Geprek</h3>
+                <img src="geprek.jpe">
+                <p>RM8.50</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Nasi Ayam Geprek', 8.50, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="2">
+                <h3>Nasi Ayam Bakar</h3>
+                <img src="bakar.jpg">
+                <p>RM8.50</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Nasi Ayam Bakar', 8.50, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="1">
+                <h3>Nasi Ayam Kukus</h3>
+                <img src="kukus.jpg">
+                <p>RM7.00</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Nasi Ayam Kukus', 7.00, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="2">
+                <h3>Tomyam with Plain Rice</h3>
+                <img src="tomyamnasi.jpg">
+                <p>RM8.00</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Tomyam with Plain Rice', 8.00, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="1">
+                <h3>Tomyam Kuey Teow</h3>
+                <img src="tomyamee.jpg">
+                <p>RM8.00</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Tomyam Kuey Teow', 8.00, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="2">
+                <h3>Spaghetti Bolognese</h3>
+                <img src="bolognese.jpg">
+                <p>RM8.50</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Spaghetti Bolognese', 8.50, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="1">
+                <h3>Spaghetti Carbonara</h3>
+                <img src="carbonara.jpg">
+                <p>RM8.50</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Spaghetti Carbonara', 8.50, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <div class="order-item" data-id="2">
+                <h3>Cheese Omelette with Jumbo Sausage</h3>
+                <img src="omelette.jpg">
+                <p>RM8.50</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button
+                    onclick="addItem('Cheese Omelette with Jumbo Sausage', 8.50, parseInt(document.getElementById('quantity').value))">Add
+                    to Cart</button>
+            </div>
+            <!-- Order Cart -->
+            <div class="cart-container">
+                <div class="cart">
+                    <h2>Shopping Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <p>Total: RM<span id="cart-total">0.00</span></p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <p>Contact</p>
+        <p>Call us at 05050515-122330</p>
+        <p>We offer full-service catering for any event, large or small. We
+            understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look
+            and taste.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
